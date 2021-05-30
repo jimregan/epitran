@@ -1,0 +1,716 @@
+::consonant:: = b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z
+::nonsyllabic:: = á|b|c|d|f|g|h|j|k|l|m|n|ó|p|q|r|s|t|ú|v|w|x|y|z
+
+% broad future/conditional endings
+::bfce:: = á|adh|aidh|aidís|aimid|aimis|ainn|as
+% slender future/conditional endings
+::sfce:: = eá|eadh|idh|idís|imid|imis|inn
+%::l_or_ll:: = ll|l
+%::mn:: = m|n
+::fmp:: = f|m|p
+::lnr:: l|n|r
+%::lrst:: = l|r|s|t
+::dnlst:: = d|n|l|s|t
+%::dnst:: = d|n|s|t
+::rdnlr:: = rd|rn|rl|rr
+::vowel:: = a|á|e|é|i|í|o|ó|u|ú
+% left context short broad vowel
+::lcsbv:: = ea|io|iu|a|o|u
+% left context short slender vowel
+::lcssv:: = ai|eai|ei|e|iui|i|oi|ui
+% left context broad vowel
+::lcbv:: = adh|ae|ao|aá|ea|eá|eo|éa|io|iu|iú|ío|oó|uío|ua|u|ú
+% right context broad vowel
+%::rcbv::= aei|ae|ai|aoi|ao|a|ái|á|oi|o|ói|ó|ui|uío|uí|u|úi|ú
+% left context slender vowel
+::lcsv:: = aei|aidh|ai|aí|aoi|ái|eai|eái|ei|eoi|e|éi|é|iai|iui|iúi|i|í|oi|ói|uai|ui|uí|úi
+% right context slender vowel
+::rcsv:: = eai|ea|eái|eá|ei|eoi|eo|e|éa|éi|é|iai|ia|io|iui|iu|iúi|iú|i|ío|í
+% left context long vowel
+::lclv:: = aei|ae|aoi|ao|ái|á|eái|eá|eoi|eó|eo|éi|é|iúi|iú|ío|í|ói|ó|uío|uí|úi|ú
+% left context slender long vowel
+::lcslv:: = aei|aidh|aoi|ái|eái|eoi|éi|é|iúi|í|ói|uai|uí|úi
+
+ádh -> ɑː
+ái -> ɑː
+á -> ɑː
+
+abh -> ABH
+adh -> ADH / _ #
+adh -> ai
+agh -> ai
+aei -> eː
+ae -> eː
+aíodh -> ÍODH / _ #
+aío -> AÍO
+aí -> iː
+aidh -> IDH / _ #
+aidh -> ai
+aigh -> IGH / _ #
+aigh -> ai
+aithe -> ITHE / _ #
+ai -> 0 / # (::consonant::)* (::vowel::)* abh _ (::consonant::)+
+ai -> 0 / # (::consonant::)* (::vowel::)* adh _ (::consonant::)+
+ai -> 0 / # (::consonant::)* (::vowel::)* agh _ (::consonant::)+
+ai -> 0 / # (::consonant::)* (::vowel::)* amh _ (::consonant::)+
+ai -> 0 / # (::consonant::)* obh _ (::consonant::)+
+ai -> 0 / # (::consonant::)* (::vowel::)* ódh _ (::consonant::)+
+ai -> 0 / # (::consonant::)* odh _ (::consonant::)+
+ai -> 0 / # (::consonant::)* (::vowel::)* ogh _ (::consonant::)+
+ai -> 0 / # (::consonant::)* (::vowel::)* omh _ (::consonant::)+
+ai -> 0 / # (::consonant::)* (::vowel::)* umh _ (::consonant::)+
+
+ai -> ɑː / # (::consonant::)* _ (::rdnlr::)
+ai -> a / # (::consonant::)* _
+ai -> ə / (::vowel::)+ (::consonant::)+ _
+ai -> a
+amh -> AMH / _ #
+amh -> au
+aoi -> AO
+ao -> AO
+
+a -> 0 / # (::consonant::)* (::vowel::)* abh _ (::consonant::)+
+a -> 0 / # (::consonant::)* (::vowel::)* adh _ (::consonant::)+
+a -> 0 / # (::consonant::)* (::vowel::)* agh _ (::consonant::)+
+a -> 0 / # (::consonant::)* (::vowel::)* amh _ (::consonant::)+
+a -> 0 / # (::consonant::)* obh _ (::consonant::)+
+a -> 0 / # (::consonant::)* (::vowel::)* ódh _ (::consonant::)+
+a -> 0 / # (::consonant::)* odh _ (::consonant::)+
+a -> 0 / # (::consonant::)* (::vowel::)* ogh _ (::consonant::)+
+a -> 0 / # (::consonant::)* (::vowel::)* omh _ (::consonant::)+
+a -> 0 / # (::consonant::)* (::vowel::)* umh _ (::consonant::)+
+
+# addition
+a -> 0 / # (::consonant::)* (::vowel::)* ogh _ #
+omh -> oː / (gc|ch|c) _ (ai|a) r
+
+a -> ɑː / # (::consonant::)* _ (::rdnlr::)
+a -> a / # (::consonant::)* _
+
+a -> ə / (::vowel::)+ (::consonant::)+ _
+a -> a
+
+éa -> eː
+éi -> eː
+é -> eː
+
+eái -> ɑː
+eá -> ɑː
+eabh -> ABH
+eadh -> ADH / _ #
+eadh -> au
+eagh -> ai
+eai -> a
+eamh -> AMH / _ #
+eamh -> au / # (::consonant::)* _
+# VOWEL, or (::vowel::)* ??
+ea -> 0 / # (::consonant::)* (::vowel::) igh _ (::consonant::)+
+
+ea -> ɑː / # (::consonant::)* _ (::rdnlr::)
+ea -> a / # (::consonant::)* _
+
+ea -> ə / (::vowel::)+ (::consonant::)+ _
+ea -> a
+
+eidh -> EIDH
+eigh -> EIGH
+​ɛ
+ei -> eː / # (::consonant::)* _ (::rdnlr::) #
+ei -> eː / # (::consonant::)* _ (::rdnlr::) (::nonsyllabic::)
+ei -> ɛ / # (::consonant::)* _
+ei -> ɛ
+eódh -> oː
+eoi -> oː
+eó -> oː
+eo -> oː
+e -> ɛ / # (::consonant::)* _
+e -> ə / (::vowel::)+ (::consonant::)+ _
+e -> ɛ
+
+íodh -> ÍODH / _ #
+ío -> iː
+í -> iː
+
+iadh -> iə
+iath -> iə
+iai -> iə
+ia -> iə
+idh -> IDH
+igh -> IGH
+io -> IO
+ithe -> ITHE / _ #
+iúi -> uː
+iú -> uː
+iubh -> UBH
+iumh -> uː
+iui -> uː
+iu -> u
+i -> 0 / # (::consonant::)* (::vowel::) idh _ (::consonant::)+ #
+i -> 0 / # (::consonant::)* (::vowel::) igh _ (::consonant::)+
+i -> ə / (::vowel::)+ (::consonant::)+ _
+i -> i
+
+ódh -> ÓDH / _ #
+ói -> oː
+ó -> oː
+
+obh -> OBH
+odh -> ODH
+ogh -> OGH
+
+oí -> iː
+oidh -> OIDH
+oigh -> OIGH
+
+oi -> oː / # (::consonant::)* _ (::rdnlr::)
+oi -> ə / # (::vowel::)+ (::consonant::)+ _
+oi -> OI
+omh -> OMH
+
+o -> oː / # (::consonant::)* _ (::rdnlr::) #
+o -> oː / # (::consonant::)* _ (::rdnlr::) (::nonsyllabic::)
+o -> o / # (::vowel::)+ (::consonant::)+ _
+o -> o
+
+úi -> uː
+ú -> uː
+
+uath -> uə
+uai -> uə
+ua -> uə
+ubh -> UBH
+ue -> ɛ
+
+ui -> uː / # (::consonant::)* _ (::rdnlr::) #
+ui -> uː / # (::consonant::)* _ (::rdnlr::) (::nonsyllabic::)
+ui -> i / # (::consonant::)* _
+ui -> ə / (::vowel::)+ (::consonant::)+ _
+ui -> UI
+uío -> iː
+uí -> iː
+umh -> uː
+
+u -> uː / # (::consonant::)* _ (::rdnlr::)
+u -> u / # (::consonant::)* _
+u -> ə / (::vowel::)+ (::consonant::)+ _
+u -> u
+
+bf -> pˠ / _ (::bfce::) #
+bf -> pʲ / _ (::sfce::) #
+bhf -> vʲ / # _ (::consonant::)* (::rcsv::) #
+bhf -> vʲ / # _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+bhf -> vˠ / # _
+bhf -> fˠ / _ (::bfce::) #
+bhf -> fʲ / _ (::sfce::) #
+bh -> ə vˠ / # (::lcsbv::) (::lnrp::) _
+bh -> ə vˠ / (::nonsyllabic::) (::lcsbv::) (::lnrp::) _
+bh -> ə vʲ / # (::lcssv::) (::lnrp::) _
+bh -> ə vʲ / (::nonsyllabic::) (::lcssv::) (::lnrp::) _
+
+bh -> vʲ / # _ (::consonant::)* (::rcsv::) #
+bh -> vʲ / # _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+bh -> vˠ / # _
+
+bh -> vʲ / _ (::consonant::)* (::rcsv::) #
+bh -> vʲ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+bh -> vʲ / # (::lcsv::) (::consonant::)+ _
+bh -> vʲ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+bh -> vʲ / # (::lcsv::) _
+bh -> vʲ / (::nonsyllabic::) (::lcsv::) _
+bh -> vˠ
+ 
+bp -> bʲ / # _ (::consonant::)* (::rcsv::) #
+bp -> bʲ / # _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+bp -> bˠ / # _
+
+bth -> pˠ / (::lcbv::) (::consonant::)* _
+bth -> pʲ / (::lcsv::) (::consonant::)* _
+
+b -> ə bˠ / # (::lcsbv::) (::lnrp::) _
+b -> ə bˠ / (::nonsyllabic::) (::lcsbv::) (::lnrp::) _
+b -> ə bʲ / # (::lcssv::) (::lnrp::) _
+b -> ə bʲ / (::nonsyllabic::) (::lcssv::) (::lnrp::) _
+
+b -> bʲ / _ (::consonant::)* (::rcsv::) #
+b -> bʲ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+b -> bʲ / # (::lcsv::) (::consonant::)+ _
+b -> bʲ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+b -> bʲ / # (::lcsv::) _
+b -> bʲ / (::nonsyllabic::) (::lcsv::) _
+b -> bˠ
+
+cf -> K / _ (::bfce::) #
+cf -> KJ / _ (::sfce::) #
+
+chf -> X / _ (::bfce::) #
+chf -> XJ / _ (::sfce::) #
+
+ch -> ə X / # (::lcsbv::) (::lnrp::) _
+ch -> ə X / (::nonsyllabic::) (::lcsbv::) (::lnrp::) _
+ch -> ə XJ / # (::lcssv::) (::lnrp::) _
+ch -> ə XJ / (::nonsyllabic::) (::lcssv::) (::lnrp::) _
+
+ch -> XJ / # _ (::consonant::)* (::rcsv::) #
+ch -> XJ / # _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+ch -> X / # _
+
+ch -> XJ / _ (::consonant::)* (::rcsv::) #
+ch -> XJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+ch -> XJ / # (::lcsv::) (::consonant::)+ _
+ch -> XJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+ch -> XJ / # (::lcsv::) _
+ch -> XJ / (::nonsyllabic::) (::lcsv::) _
+ch -> X
+ 
+cth -> K / (::lcbv::) (::consonant::)* _
+cth -> KJ / (::lcsv::) (::consonant::)* _
+
+c -> KJ / _ (::consonant::)* (::rcsv::) #
+c -> KJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+c -> KJ / # (::lcsv::) (::consonant::)+ _
+c -> KJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+c -> KJ / # (::lcsv::) _
+c -> KJ / (::nonsyllabic::) (::lcsv::) _
+c -> K
+
+df -> T / _ (::bfce::) #
+df -> TJ / _ (::sfce::) #
+
+dha -> 0 / # (::lclv::) _
+dha -> 0 / (::nonsyllabic::) (::lclv::) _
+dh -> GFJ / # (::lcslv::) _
+dh -> GFJ / (::nonsyllabic::) (::lcslv::) _
+dh -> GFJ / # (::consonant::)* (::lcsvs::) _ #
+dh -> 0 / # (::lclv::) _
+dh -> 0 / (::nonsyllabic::) (::lclv::) _
+
+dh -> GFJ / # _ (::consonant::)* (::rcsv::) #
+dh -> GFJ / # _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+dh -> GF / # _
+
+dh -> GFJ / _ (::consonant::)* (::rcsv::) #
+dh -> GFJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+dh -> GFJ / # (::lcsv::) (::consonant::)+ _
+dh -> GFJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+dh -> GFJ / # (::lcsv::) _
+dh -> GFJ / (::nonsyllabic::) (::lcsv::) _
+dh -> GF
+
+dt -> DJ / # _ (::consonant::)* (::rcsv::) #
+dt -> DJ / # _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+dt -> D / # _
+
+dt -> T / (::lcbv::) (::consonant::)* _
+dt -> TJ / (::lcsv::) (::consonant::)* _
+
+d -> DJ / _ (::consonant::)* (::rcsv::) #
+d -> DJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+d -> DJ / # (::lcsv::) (::consonant::)+ _
+d -> DJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+d -> DJ / # (::lcsv::) _
+d -> DJ / (::nonsyllabic::) (::lcsv::) _
+d -> D
+
+fh -> 0
+f -> H / (::vowel::) _ (::bfce::) #
+f -> HJ / (::vowel::) _ (::sfce::) #
+
+f -> ə F / # (::lcsbv::) (::lnrp::) _
+f -> ə F / (::nonsyllabic::) (::lcsbv::) (::lnrp::) _
+f -> ə FJ / # (::lcssv::) (::lnrp::) _
+f -> ə FJ / (::nonsyllabic::) (::lcssv::) (::lnrp::) _
+
+f -> FJ / _ (::consonant::)* (::rcsv::) #
+f -> FJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+f -> FJ / # (::lcsv::) (::consonant::)+ _
+f -> FJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+f -> FJ / # (::lcsv::) _
+f -> FJ / (::nonsyllabic::) (::lcsv::) _
+f -> F
+
+gc -> GJ / # _ (::consonant::)* (::rcsv::) #
+gc -> GJ / # _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+gc -> G / # _
+
+gf -> K / _ (::bfce::) #
+gf -> KJ / _ (::sfce::) #
+
+gh -> GFJ / # _ (::consonant::)* (::rcsv::) #
+gh -> GFJ / # _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+gh -> GF / # _
+
+gh -> GFJ / # (::lcslv::) _
+gh -> GFJ / (::nonsyllabic::) (::lcslv::) _
+gh -> GFJ / # (::consonant::)* (::lcsvs::) _ #
+gh -> 0 / # (::lclv::) _
+gh -> 0 / (::nonsyllabic::) (::lclv::) _
+
+gh -> GFJ / _ (::consonant::)* (::rcsv::) #
+gh -> GFJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+gh -> GFJ / # (::lcsv::) (::consonant::)+ _
+gh -> GFJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+gh -> GFJ / # (::lcsv::) _
+gh -> GFJ / (::nonsyllabic::) (::lcsv::) _
+gh -> GF
+
+gth -> K / (::lcbv::) (::consonant::)* _
+gth -> KJ / (::lcsv::) (::consonant::)* _
+
+g -> @@ G / # (::lcsbv::) (::lnrp::) _
+g -> @@ G / (::nonsyllabic::) (::lcsbv::) (::lnrp::) _
+g -> @@ GJ / # (::lcssv::) (::lnrp::) _
+g -> @@ GJ / (::nonsyllabic::) (::lcssv::) (::lnrp::) _
+
+g -> GJ / _ (::consonant::)* (::rcsv::) #
+g -> GJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+g -> GJ / # (::lcsv::) (::consonant::)+ _
+g -> GJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+g -> GJ / # (::lcsv::) _
+g -> GJ / (::nonsyllabic::) (::lcsv::) _
+g -> G
+
+h -> HJ / _ (::consonant::)* (::rcsv::) #
+h -> HJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+h -> HJ / # (::lcsv::) (::consonant::)+ _
+h -> HJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+h -> HJ / # (::lcsv::) _
+h -> HJ / (::nonsyllabic::) (::lcsv::) _
+h -> H
+
+j -> DJZJ
+
+k -> KJ / _ (::consonant::)* (::rcsv::) #
+k -> KJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+k -> KJ / # (::lcsv::) (::consonant::)+ _
+k -> KJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+k -> KJ / # (::lcsv::) _
+k -> KJ / (::nonsyllabic::) (::lcsv::) _
+k -> K
+
+llf -> LL_D / _ (::bfce::) #
+llf -> LLJ_D / _ (::sfce::) #
+
+llth -> LL_D / (::lcbv::) (::consonant::)* _
+llth -> LLJ_D / (::lcsv::) (::consonant::)* _
+
+ll -> LLJ / _ (::consonant::)* (::rcsv::) #
+ll -> LLJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+ll -> LLJ / # (::lcsv::) (::consonant::)+ _
+ll -> LLJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+ll -> LLJ / # (::lcsv::) _
+ll -> LLJ / (::nonsyllabic::) (::lcsv::) _
+ll -> LL
+
+lf -> LL_D / _ (::bfce::) #
+lf -> LJ_D / _ (::sfce::) #
+
+lth -> LL_D / (::lcbv::) (::consonant::)* _
+lth -> LJ_D / (::lcsv::) (::consonant::)* _
+
+l -> LJ / _ (::consonant::)* (::rcsv::) #
+l -> LJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+l -> LJ / # (::lcsv::) (::consonant::)+ _
+l -> LJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+l -> LJ / # (::lcsv::) _
+l -> LJ / (::nonsyllabic::) (::lcsv::) _
+l -> LL
+
+mb -> MJ / # _ (::consonant::)* (::rcsv::) #
+mb -> MJ / # _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+mb -> M / # _
+
+mf -> M_D / _ (::bfce::) #
+mf -> MJ_D / _ (::sfce::) #
+
+mhf -> F / _ (::bfce::) #
+mhf -> FJ / _ (::sfce::) #
+
+mh -> VJ / # _ (::consonant::)* (::rcsv::) #
+mh -> VJ / # _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+mh -> V / # _
+
+mh -> @@ V / # (::lcsbv::) (::lnrp::) _
+mh -> @@ V / (::nonsyllabic::) (::lcsbv::) (::lnrp::) _
+mh -> @@ VJ / # (::lcssv::) (::lnrp::) _
+mh -> @@ VJ / (::nonsyllabic::) (::lcssv::) (::lnrp::) _
+
+mh -> VJ / _ (::consonant::)* (::rcsv::) #
+mh -> VJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+mh -> VJ / # (::lcsv::) (::consonant::)+ _
+mh -> VJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+mh -> VJ / # (::lcsv::) _
+mh -> VJ / (::nonsyllabic::) (::lcsv::) _
+mh -> V
+
+mth -> M_D / (::lcbv::) (::consonant::)* _
+mth -> MJ_D / (::lcsv::) (::consonant::)* _
+
+m -> @@ M / # (::lcsbv::) (::lnrp::) _
+m -> @@ M / (::nonsyllabic::) (::lcsbv::) (::lnrp::) _
+m -> @@ MJ / # (::lcssv::) (::lnrp::) _
+m -> @@ MJ / (::nonsyllabic::) (::lcssv::) (::lnrp::) _
+
+m -> MJ / _ (::consonant::)* (::rcsv::) #
+m -> MJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+m -> MJ / # (::lcsv::) (::consonant::)+ _
+m -> MJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+m -> MJ / # (::lcsv::) _
+m -> MJ / (::nonsyllabic::) (::lcsv::) _
+m -> M
+
+nnf -> NN_D / _ (::bfce::) #
+nnf -> NNJ_D / _ (::sfce::) #
+
+nnth -> NN_D / (::lcbv::) (::consonant::)* _
+nnth -> NNJ_D / (::lcsv::) (::consonant::)* _
+
+nn -> NNJ / _ (::consonant::)* (::rcsv::) #
+nn -> NNJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+nn -> NNJ / # (::lcsv::) (::consonant::)+ _
+nn -> NNJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+nn -> NNJ / # (::lcsv::) _
+nn -> NNJ / (::nonsyllabic::) (::lcsv::) _
+nn -> NN
+
+n- -> NJ / # _ (::rcsv::) #
+n- -> NJ / # _ (::rcsv::) (::nonsyllabic::)
+n- -> NN / # _
+
+nd -> NNJ / # _ (::consonant::)* (::rcsv::) #
+nd -> NNJ / # _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+nd -> NN / # _
+
+nf -> NN_D / _ (::bfce::) #
+nf -> NJ_D / _ (::sfce::) #
+
+ngf -> NG_D / _ (::bfce::) #
+ngf -> NGJ_D / _ (::sfce::) #
+
+ngth -> NG_D / (::lcbv::) (::consonant::)* _
+ngth -> NGJ_D / (::lcsv::) (::consonant::)* _
+
+ng -> NGJ / # _ (::consonant::)* (::rcsv::) #
+ng -> NGJ / # _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+ng -> NG / # _
+ng -> NJ / # (::lcsv::) _ t #
+ng -> NJ / (::nonsyllabic::) (::lcsv::) _ t #
+
+ng -> NGJ / _ (::consonant::)* (::rcsv::) #
+ng -> NGJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+ng -> NGJ / # (::lcsv::) (::consonant::)+ _
+ng -> NGJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+ng -> NGJ / # (::lcsv::) _
+ng -> NGJ / (::nonsyllabic::) (::lcsv::) _
+ng -> NG
+
+nth -> NN_D / (::lcbv::) (::consonant::)* _
+nth -> NJ_D / (::lcsv::) (::consonant::)* _
+
+n -> NGJ / # (::lcsv::) _ c
+n -> NGJ / (::nonsyllabic::) (::lcsv::) _ c
+n -> NG / _ c
+
+n -> NJ / _ (::consonant::)* (::rcsv::) #
+n -> NJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+n -> NJ / # (::lcsv::) (::consonant::)+ _
+n -> NJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+n -> NJ / # (::lcsv::) _
+n -> NJ / (::nonsyllabic::) (::lcsv::) _
+n -> NN
+
+pf -> P / _ (::bfce::) #
+pf -> PJ / _ (::sfce::) #
+
+ph -> FJ / # _ (::consonant::)* (::rcsv::) #
+ph -> FJ / # _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+ph -> F / # _
+
+ph -> FJ / _ (::consonant::)* (::rcsv::) #
+ph -> FJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+ph -> FJ / # (::lcsv::) (::consonant::)+ _
+ph -> FJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+ph -> FJ / # (::lcsv::) _
+ph -> FJ / (::nonsyllabic::) (::lcsv::) _
+ph -> F
+
+pth -> P / (::lcbv::) (::consonant::)* _
+pth -> PJ / (::lcsv::) (::consonant::)* _
+
+p -> PJ / _ (::consonant::)* (::rcsv::) #
+p -> PJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+p -> PJ / # (::lcsv::) (::consonant::)+ _
+p -> PJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+p -> PJ / # (::lcsv::) _
+p -> PJ / (::nonsyllabic::) (::lcsv::) _
+p -> P
+
+q -> K V
+
+rrf -> RR_D / _ (::bfce::) #
+rrf -> RRJ_D / _ (::sfce::) #
+
+rrth -> RR_D / (::lcbv::) (::consonant::)* _
+rrth -> RRJ_D / (::lcsv::) (::consonant::)* _
+
+rr -> RRJ / _ (::consonant::)* (::rcsv::) #
+rr -> RRJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+rr -> RRJ / # (::lcsv::) (::consonant::)+ _
+rr -> RRJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+rr -> RRJ / # (::lcsv::) _
+rr -> RRJ / (::nonsyllabic::) (::lcsv::) _
+rr -> RR
+
+rf -> R_D / _ (::bfce::) #
+rf -> RJ_D / _ (::sfce::) #
+
+rth -> R_D / (::lcbv::) (::consonant::)* _
+rth -> RJ_D / (::lcsv::) (::consonant::)* _
+
+r -> R / # s _
+r -> R / # _
+% This rule blocks tests for airde and ceird
+r -> R / _ (::dnlst::)
+
+r -> RJ / _ (::consonant::)* (::rcsv::) #
+r -> RJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+r -> RJ / # (::lcsv::) (::consonant::)+ _
+r -> RJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+r -> RJ / # (::lcsv::) _
+r -> RJ / (::nonsyllabic::) (::lcsv::) _
+r -> R
+
+sf -> S / _ (::bfce::) #
+sf -> SJ / _ (::sfce::) #
+
+shl -> LJ_D / _ (::consonant::)* (::rcsv::) #
+shl -> LJ_D / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+shl -> LL_D
+shm -> MJ_D / _ (::consonant::)* (::rcsv::) #
+shm -> MJ_D / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+shm -> M_D
+shn -> NJ_D / _ (::consonant::)* (::rcsv::) #
+shn -> NJ_D / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+shn -> NN_D
+shr -> RJ_D / _ (::consonant::)* (::rcsv::) #
+shr -> RJ_D / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+shr -> R_D
+
+sh -> XJ / # _ (::consonant::)* (::rcsv::) #
+sh -> XJ / # _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+sh -> H / # _
+
+sh -> XJ / _ (::consonant::)* (::rcsv::) #
+sh -> XJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+sh -> XJ / # (::lcsv::) (::consonant::)+ _
+sh -> XJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+sh -> XJ / # (::lcsv::) _
+sh -> XJ / (::nonsyllabic::) (::lcsv::) _
+sh -> H
+
+s -> S / # _ r
+s -> S / # _ (::fmp::) (::consonant::)* (::rcsv::) #
+s -> S / # _ (::fmp::) (::consonant::)* (::rcsv::) (::nonsyllabic::)
+
+s -> SJ / _ (::consonant::)* (::rcsv::) #
+s -> SJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+s -> SJ / # (::lcsv::) (::consonant::)+ _
+s -> SJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+s -> SJ / # (::lcsv::) _
+s -> SJ / (::nonsyllabic::) (::lcsv::) _
+s -> S
+
+t- -> TJ / # _ (::rcsv::) #
+t- -> TJ / # _ (::rcsv::) (::nonsyllabic::)
+t- -> T / # _
+
+tf -> T / _ (::bfce::) #
+tf -> TJ / _ (::sfce::) #
+
+% "hack for compound boundaries"
+th -> 0 / _ (::consonant::) h
+
+thb -> PJ / _ (::consonant::)* (::rcsv::) #
+thb -> PJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+thb -> P
+thc -> KJ / _ (::consonant::)* (::rcsv::) #
+thc -> KJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+thc -> K
+thd -> TJ / _ (::consonant::)* (::rcsv::) #
+thd -> TJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+thd -> T
+
+thf -> H / _ (::bfce::) #
+thf -> XJ / _ (::sfce::) #
+
+thl -> LJ_D / _ (::consonant::)* (::rcsv::) #
+thl -> LJ_D / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+thl -> LL_D
+thm -> MJ_D / _ (::consonant::)* (::rcsv::) #
+thm -> MJ_D / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+thm -> M_D
+thn -> NJ_D / _ (::consonant::)* (::rcsv::) #
+thn -> NJ_D / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+thn -> NN_D
+thp -> PJ / _ (::consonant::)* (::rcsv::) #
+thp -> PJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+thp -> P
+thr -> RJ_D / _ (::consonant::)* (::rcsv::) #
+thr -> RJ_D / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+thr -> R_D
+ths -> SJ / _ (::consonant::)* (::rcsv::) #
+ths -> SJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+ths -> S
+tht -> TJ / _ (::consonant::)* (::rcsv::) #
+tht -> TJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+tht -> T
+
+th -> HJ / # _ (::consonant::)* (::rcsv::) #
+th -> HJ / # _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+th -> H / # _
+
+th -> HJ / _ (::consonant::)* (::rcsv::) #
+th -> HJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+th -> HJ / # (::lcsv::) (::consonant::)+ _
+th -> HJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+th -> HJ / # (::lcsv::) _
+th -> HJ / (::nonsyllabic::) (::lcsv::) _
+th -> H
+
+ts -> TJ / # _ (::consonant::)* (::rcsv::) #
+ts -> TJ / # _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+ts -> T / # _
+
+t -> TJ / _ (::consonant::)* (::rcsv::) #
+t -> TJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+t -> TJ / # (::lcsv::) (::consonant::)+ _
+t -> TJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+t -> TJ / # (::lcsv::) _
+t -> TJ / (::nonsyllabic::) (::lcsv::) _
+t -> T
+
+v -> VJ / _ (::consonant::)* (::rcsv::) #
+v -> VJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+v -> VJ / # (::lcsv::) (::consonant::)+ _
+v -> VJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+v -> VJ / # (::lcsv::) _
+v -> VJ / (::nonsyllabic::) (::lcsv::) _
+v -> V
+
+w -> V
+
+x- -> E KJ S
+x -> ZJ
+
+y -> GFJ
+
+z -> ZJ / _ (::consonant::)* (::rcsv::) #
+z -> ZJ / _ (::consonant::)* (::rcsv::) (::nonsyllabic::)
+z -> ZJ / # (::lcsv::) (::consonant::)+ _
+z -> ZJ / (::nonsyllabic::) (::lcsv::) (::consonant::)+ _
+z -> ZJ / # (::lcsv::) _
+z -> ZJ / (::nonsyllabic::) (::lcsv::) _
+z -> Z
+
+' -> 0
+’ -> 0
+- -> 0
